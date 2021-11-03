@@ -1,0 +1,40 @@
+volumes:
+  certs: ~
+  data: ~
+
+services:
+  teleport-server:
+    image: quay.io/gravitational/teleport:7
+    ports:
+      - "3023:3023"
+      - "3024:3024"
+      - "3025:3025"
+      - "3080:3080"
+    volumes:
+      - ./teleport.yaml:/etc/teleport/teleport.yaml
+      - data:/var/lib/teleport
+      - certs:/mnt/shared/certs
+    healthcheck:
+      test: tctl status
+      interval: 2s
+      timeout: 2s
+      retries: 3
+      start_period: 5s
+
+  node-one:
+    image: quay.io/gravitational/teleport:7
+    depends_on:
+      teleport-server:
+        condition: service_healthy
+    volumes:
+      - ./teleport-client.yaml:/etc/teleport/teleport.yaml
+      - certs:/mnt/shared/certs
+
+  node-two:
+    image: quay.io/gravitational/teleport:7
+    depends_on:
+      teleport-server:
+        condition: service_healthy
+    volumes:
+      - ./teleport-client.yaml:/etc/teleport/teleport.yaml
+      - certs:/mnt/shared/certs
