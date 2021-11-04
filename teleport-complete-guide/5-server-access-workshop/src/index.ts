@@ -1,7 +1,7 @@
 import * as linode from "@pulumi/linode";
 
 const teleportServer = new linode.Instance("teleport-server", {
-  label: "Teleport Server",
+  label: "teleport-server",
   type: "g6-nanode-1",
   region: "eu-west",
   image: "linode/ubuntu20.04",
@@ -9,7 +9,7 @@ const teleportServer = new linode.Instance("teleport-server", {
 });
 
 const teleportWorker1 = new linode.Instance("teleport-worker-1", {
-  label: "Teleport Worker 1",
+  label: "teleport-worker-1",
   type: "g6-nanode-1",
   region: "eu-west",
   image: "linode/debian10",
@@ -17,7 +17,7 @@ const teleportWorker1 = new linode.Instance("teleport-worker-1", {
 });
 
 const teleportWorker2 = new linode.Instance("teleport-worker-2", {
-  label: "Teleport Worker 2",
+  label: "teleport-worker-2",
   type: "g6-nanode-1",
   region: "eu-west",
   image: "linode/arch",
@@ -25,7 +25,7 @@ const teleportWorker2 = new linode.Instance("teleport-worker-2", {
 });
 
 const teleportWorker3 = new linode.Instance("teleport-worker-3", {
-  label: "Teleport Worker 3",
+  label: "teleport-worker-3",
   type: "g6-nanode-1",
   region: "eu-west",
   image: "linode/fedora35",
