@@ -1,0 +1,13 @@
+volumes:
+  teleport-server-certs: ~
+  teleport-server-data: ~
+
+services:
+  teleport-server:
+    image: quay.io/gravitational/teleport:7
+    ports:
+      - "443:443"
+    volumes:
+      - ./teleport.server.yaml:/etc/teleport/teleport.yaml
+      - teleport-server-data:/var/lib/teleport
+      - teleport-server-certs:/mnt/shared/certs

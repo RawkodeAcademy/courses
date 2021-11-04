@@ -1,0 +1,4 @@
+name: teleport-server-access-workshop
+runtime: nodejs
+description: A minimal Linode TypeScript Pulumi program
+main: src/index.ts
