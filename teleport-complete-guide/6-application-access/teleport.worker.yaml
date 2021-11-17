@@ -1,0 +1,19 @@
+teleport:
+  nodename: w1.rawkode.sh
+  data_dir: /var/lib/teleport
+  log:
+    output: stderr
+    severity: INFO
+    format:
+      output: text
+  ca_pin: []
+  diag_addr: ""
+
+auth_service:
+  enabled: "no"
+
+ssh_service:
+  commands:
+    - name: hostname
+      command: [hostname]
+      period: 1m0s
