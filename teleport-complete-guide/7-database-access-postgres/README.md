@@ -22,7 +22,7 @@
 </p>
 </details>
 
-# Exercise 4. Configure PostgreSQL TLS Mode
+## Exercise 4. Configure PostgreSQL TLS Mode
 
 <details><summary>Answer</summary>
 <p>
@@ -54,6 +54,8 @@ hostssl all             all             0.0.0.0/0               cert
 
 ## Exercise 5. Add a Teleport Role for DB Access
 
+<details><summary>Answer</summary>
+<p>
 ```yaml
 # db.role.yaml
 kind: role
@@ -74,6 +76,8 @@ spec:
 tctl create -f db.role.yaml
 tctl users add --roles=access,db myuser
 ```
+</p>
+</details>
 
 ## Exercise 5b. (Only Teleport Cloud) Modify Teleport Role to Include DB Impersonation
 
