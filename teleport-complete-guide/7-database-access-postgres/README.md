@@ -1,4 +1,4 @@
-## PostgreSQL Access with Teleport
+# PostgreSQL Access with Teleport
 
 ## Setup
 
