@@ -2,7 +2,7 @@
 
 This course will introduce you to working with the Border Gateway Protocol (BGP).
 
-In-order to follow along with this course, you'll need access to Equinix Metal. For 200USD FREE credits, sign-up for [Equinix Metal](https://rawkode.academy/metal) with the code `rawkode`.
+In-order to follow along with this course, you'll need access to Equinix Metal. For 200USD FREE credits, sign-up for [Equinix Metal](https://rawkode.link/metal) with the code `rawkode`.
 
 ## Parts
 

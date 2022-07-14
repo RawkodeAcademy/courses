@@ -2,7 +2,7 @@
 
 In this workshop, we're going to deploy an NGINX server to two metros within the Equinix Metal network.
 
-In-order to following along with this workshop, you need an [Equinix Metal](https://rawkode.academy/metal) account. Use the code "rawkode" when signing up to claim your 200USD FREE credits.
+In-order to following along with this workshop, you need an [Equinix Metal](https://rawkode.link/metal) account. Use the code "rawkode" when signing up to claim your 200USD FREE credits.
 
 **There's a video of this workshop being completed. If you get stuck, or just want to follow along, you can find it [here](https://www.youtube.com/watch?v=U2tVTlbUE6w).**
 
