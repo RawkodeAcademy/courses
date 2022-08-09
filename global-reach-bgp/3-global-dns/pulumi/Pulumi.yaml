@@ -1,0 +1,6 @@
+name: global-dns
+runtime:
+  name: yaml
+  options:
+    compiler: cue export
+description: A minimal Equinix Metal Pulumi YAML program
