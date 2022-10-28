@@ -1,0 +1,4 @@
+encryptionsalt: v1:+iOh0RAB47M=:v1:UQR/7hIEumhwQnGR:wFX7a+rCo0Dzleh1UaG5F58+Or+lQQ==
+config:
+  google-native:project: pulumi-development
+  google-native:zone: europe-west2-b

@@ -1,0 +1,14 @@
+{
+  "name": "kubernetes",
+  "private": true,
+  "scripts": {
+    "build": "slidev build README.md",
+    "dev": "slidev README.md",
+    "export": "slidev export README.md"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.36.9",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*"
+  }
+}

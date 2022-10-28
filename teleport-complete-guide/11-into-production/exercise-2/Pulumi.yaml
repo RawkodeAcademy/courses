@@ -1,0 +1,4 @@
+name: exercise-2-part-1
+runtime: nodejs
+description: A minimal Google Cloud TypeScript Pulumi program
+main: src/index.ts
